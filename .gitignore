@@ -1,0 +1,70 @@
+# Segredos
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Dados gerados pelos apps (podem conter documentos reais)
+.cache/
+logs/
+output/
+uploads/
+**/agente_analise_contratos_assets/uploads/
+**/agente_analise_contratos_ingestao_documentos/
+*.db
+*.sqlite
+
+# Editor / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+
+# Project-specific
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.coverage
+coverage.xml
+htmlcov/
+# Documentos reais de exemplo, gabaritos e prompts de origem (dados pessoais) — nunca versionar
+src/docs/
+# Documentação interna (calls, transcrições, reviews, cards, roteiros com dados reais)
+docs/
+.kiro/
+# Gravações de call
+*.mp4
+
+# Credenciais recebidas da Gateway — nunca versionar
+CONHECIMENTO */
+*secrets*.txt
+
+# Scripts locais com secrets (o padrão de Python não cobre .bat)
+run-local.bat
+run-local.sh
+run-local.ps1
+secrets.local.*
+.env.*
+!.env.example
+
+# Diagnóstico local (DIAGNOSTICO_DIR): prompt e resposta da IA, com PII
+diagnostico/

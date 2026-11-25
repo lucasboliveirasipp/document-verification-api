@@ -1,0 +1,33 @@
+# Framework principal
+fastapi==0.115.5
+uvicorn[standard]==0.32.0
+gunicorn==23.0.0
+
+# Uploads e multipart
+python-multipart==0.0.9
+
+# Validação e modelos
+pydantic==2.9.0
+
+# HTTP requests e APIs
+requests==2.32.3
+
+# JWT e segurança
+PyJWT==2.9.0
+
+# Variáveis de ambiente
+python-dotenv==1.0.1
+
+# Extração de texto dos PDFs (mesma versão da Curadoria)
+PyMuPDF==1.24.11
+
+# Relatório PDF do parecer
+reportlab==4.2.5
+
+# Leitura da planilha de cessionários (XLSX)
+openpyxl==3.1.5
+
+# Testes
+pytest==8.3.3
+coverage==7.6.1
+httpx==0.27.2

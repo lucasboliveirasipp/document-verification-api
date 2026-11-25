@@ -1,0 +1,34 @@
+
+[tool.poetry]
+name = "api-reconhecimento-documentacao-cadastro"
+version = "1.0.0"
+description = "BFF do agente Reconhecimento de Documentação de Cadastro sobre a Gateway"
+authors = []
+# Mesmo padrão do api-agente-orientador-curadoria: o código fica em src/
+# e o `poetry build` da pipeline precisa declarar o pacote explicitamente.
+packages = [{ include = "src" }]
+# Documentos de exemplo nunca entram no pacote.
+exclude = ["src/docs/**/*", "src/**/__pycache__/*"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-dotenv = "1.0.1"
+fastapi = "0.115.5"
+uvicorn = {extras = ["standard"], version = "0.32.0"}
+gunicorn = "23.0.0"
+python-multipart = "0.0.9"
+pydantic = "2.9.0"
+requests = "2.32.3"
+PyJWT = "2.9.0"
+PyMuPDF = "1.24.11"
+reportlab = "4.2.5"
+openpyxl = "3.1.5"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "8.3.3"
+coverage = "7.6.1"
+httpx = "0.27.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
