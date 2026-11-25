@@ -33,7 +33,7 @@ graph LR
 - **8-section PDF report** generated from the JSON result.
 - **LGPD-safe logging:** personal data and credentials are redacted.
 
-Full write-up with trade-offs: [docs/CASE_STUDY.md](docs/CASE_STUDY.md) · architecture notes in [docs/](docs/)
+Full write-up with trade-offs: [docs/CASE_STUDY.md](docs/CASE_STUDY.md)
 
 ## Run it
 
